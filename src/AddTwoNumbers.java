@@ -2,19 +2,19 @@ import java.util.Scanner;
 
 public class AddTwoNumbers {
     public static void main(String[] args) {
-        int num1;
-        double num2, sum;
+        int firstNumber;
+        double secondNumber, sum;
         Scanner sc = new Scanner(System.in);
         System.out.println("First number : ");
-        num1 = sc.nextInt();
+        firstNumber = sc.nextInt();
         System.out.println("Second number : ");
-        num2 = sc.nextDouble();
-        sum = addTwoNumbers(num1, num2);
+        secondNumber = sc.nextDouble();
+        sum = addTwoNumbers(firstNumber, secondNumber);
         System.out.println("Sum : " + sum);
         sc.close();
     }
 
-    public static double addTwoNumbers(int number1, double number2) {
-        return number1 + number2;
+    public static double addTwoNumbers(int firstNumber, double secondNumber) {
+        return  firstNumber + secondNumber;
     }
 }
