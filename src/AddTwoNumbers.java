@@ -14,7 +14,7 @@ public class AddTwoNumbers {
         sc.close();
     }
 
-    public static double addTwoNumbers(int term1, double term2) {
-        return term1 + term2;
+    public static double addTwoNumbers(int number1, double number2) {
+        return number1 + number2;
     }
 }
