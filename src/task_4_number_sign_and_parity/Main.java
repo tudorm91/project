@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-
-        int theNumber;
+        int number;
         Scanner sc = new Scanner(System.in);
         System.out.println("Choose a number: ");
-        theNumber = sc.nextInt();
+        number = sc.nextInt();
         sc.close();
-        SignParityCheck.compare2Int(theNumber);
+        SignParityCheck.checkSignParity(number);
     }
 }
