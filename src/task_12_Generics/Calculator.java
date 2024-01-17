@@ -4,9 +4,9 @@ package task_12_Generics;
 
 public class Calculator<T extends Number> {
     //private T addResult;
-   // private T substractResult;
-   // private T multiplyResult;
-   // private T divideResult;
+    // private T substractResult;
+    // private T multiplyResult;
+    // private T divideResult;
 
     public T add(T a, T b) {
         if (a instanceof Integer) {
@@ -52,13 +52,13 @@ public class Calculator<T extends Number> {
 
         Calculator<Integer> calculator = new Calculator<>();
         double addResult = calculator.add(12, -3);
-       Calculator<Double> calculator1 = new Calculator<>();
-        System.out.println("Addition result is " +addResult);
-        double subtractResult = calculator1.subtract(12.4,-3.0);
-        System.out.println("Subtraction result is "+subtractResult);
-        double multiplyResult = calculator1.multiply(12.4,-3.0);
-        System.out.println("Multiplication result is "+multiplyResult);
-        double divideResult = calculator1.divide(12.4,0.1);
-        System.out.println("Division result is "+divideResult);
+        Calculator<Double> calculator1 = new Calculator<>();
+        System.out.println("Addition result is " + addResult);
+        double subtractResult = calculator1.subtract(12.4, -3.0);
+        System.out.println("Subtraction result is " + subtractResult);
+        double multiplyResult = calculator1.multiply(12.4, -3.0);
+        System.out.println("Multiplication result is " + multiplyResult);
+        double divideResult = calculator1.divide(12.4, 0.1);
+        System.out.println("Division result is " + divideResult);
     }
 }
