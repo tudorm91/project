@@ -1,6 +1,6 @@
 package task_12_Generics;
 
-import static java.lang.Math.*;
+import static java.lang.Math.PI;
 
 public class Main {
     public static <T> void displayBoxContents(Box<T> box) {
@@ -9,7 +9,6 @@ public class Main {
         System.out.println("Type: " + type + ", Value: " + value);
     }
 
-    
 
     public static void main(String[] args) {
 
@@ -19,10 +18,10 @@ public class Main {
         Box<String> stringBox = new Box<>("41");
         displayBoxContents(stringBox);
 
-        Box<Float> floatBox = new Box<>(87+87.8f+ (float) PI);
+        Box<Float> floatBox = new Box<>(87 + 87.8f + (float) PI);
         displayBoxContents(floatBox);
 
-        Box<Double> doubleBox = new Box<>(87+0.2+PI);
+        Box<Double> doubleBox = new Box<>(87 + 0.2 + PI);
         displayBoxContents(doubleBox);
     }
 }
